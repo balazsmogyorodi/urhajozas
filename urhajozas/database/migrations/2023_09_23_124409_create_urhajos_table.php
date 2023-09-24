@@ -17,7 +17,7 @@ return new class extends Migration
             $table->id("azonosito");
             $table->string("nev");
             $table->date("szuletes");
-            $table->integer("urhajoId");
+            $table->foreignId('urhajoId')->references('id')->on('Urhajo');
             $table->timestamps();
         });
     }

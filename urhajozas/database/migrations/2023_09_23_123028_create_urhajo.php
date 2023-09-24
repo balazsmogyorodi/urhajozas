@@ -13,9 +13,9 @@ return new class extends Migration {
     public function up()
     {
         Schema::create('urhajo', function (Blueprint $table) {
-            $table->integer("id");
+            $table->id();
             $table->string("nev");
-            $table->string("kuldetes_id");
+            $table->string('kuldetes_kod');
             $table->timestamps();
         });
     }

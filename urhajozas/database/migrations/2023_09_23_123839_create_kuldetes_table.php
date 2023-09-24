@@ -14,7 +14,7 @@ return new class extends Migration
     public function up()
     {
         Schema::create('kuldetes', function (Blueprint $table) {
-            $table->id();
+            $table->id("kod_nev");
             $table->string("nev");
             $table->string("cel");
             $table->dateTime("kezdes");

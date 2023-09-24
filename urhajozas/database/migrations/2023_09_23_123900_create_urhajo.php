@@ -15,7 +15,7 @@ return new class extends Migration {
         Schema::create('urhajo', function (Blueprint $table) {
             $table->id();
             $table->string("nev");
-            $table->string('kuldetes_kod');
+            $table->foreignId('kuldetes_id')->references('kod_nev')->on('Kuldetes');
             $table->timestamps();
         });
     }

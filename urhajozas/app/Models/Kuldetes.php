@@ -9,8 +9,8 @@ class Kuldetes extends Model
 {
     use HasFactory;
 
-    protected $primaryKey = "kod_nev";
-    
+    protected $primaryKey = "kod_id";
+
 
     protected $fillable = [
         'nev',
@@ -18,4 +18,8 @@ class Kuldetes extends Model
         'kezdes',
         'befejezve'
     ];
+
+
+
 }
+

@@ -18,12 +18,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/api/tasks',[KuldetesController::class,'index']);
-Route::get('/api/tasks/{id}', [KuldetesController::class,'show']);
-Route::post('/api/tasks', [KuldetesController::class, "store"]);
-Route::get('/task/list', [KuldetesController::class,'listView']);
-Route::get('/task/new', [KuldetesController::class, "newView"]);
-Route::get('/task/edit/{id}', [KuldetesController::class, "editView"]);
+Route::get('/api/Kuldetes',[KuldetesController::class,'index']);
+Route::get('/api/Kuldetes/{id}', [KuldetesController::class,'show']);
+Route::post('/api/Kuldetes', [KuldetesController::class, "store"]);
+Route::get('/Kuldetes/list', [KuldetesController::class,'listView']);
+Route::get('/Kuldetes/new', [KuldetesController::class, "newView"]);
+Route::get('/Kuldetes/edit/{id}', [KuldetesController::class, "editView"]);
 
 
 

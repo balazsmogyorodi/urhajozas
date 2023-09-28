@@ -48,7 +48,7 @@ class KuldetesController extends Controller
     
     public function newView() {
         $users= User::all();
-        return view('task.new', ['users' => $users]);
+        return view('Kuldetes.new', ['users' => $users]);
     }
     public function editView($id) {
         $users = User::all();

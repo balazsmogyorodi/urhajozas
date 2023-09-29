@@ -1,10 +1,12 @@
 <?php
 
+use App\Models\Urhajo;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-return new class extends Migration {
+return new class extends Migration
+{
     /**
      * Run the migrations.
      *
@@ -18,6 +20,22 @@ return new class extends Migration {
             $table->foreignId('kuldetes_id')->references('kod_nev')->on('Kuldetes');
             $table->timestamps();
         });
+
+        Urhajo::create([
+            'nev' => 'Nasa'
+        ]);
+
+        Urhajo::create([
+            'nev' => 'T-series'
+        ]);
+
+        Urhajo::create([
+            'nev' => 'Rakéta'
+        ]);
+
+        Urhajo::create([
+            'nev' => 'Fejszés'
+        ]);
     }
 
     /**

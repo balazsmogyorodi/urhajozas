@@ -22,19 +22,23 @@ return new class extends Migration
         });
 
         Urhajo::create([
-            'nev' => 'Nasa'
+            'nev' => 'Nasa',
+            'kuldetes_id' => 1
         ]);
 
         Urhajo::create([
-            'nev' => 'T-series'
+            'nev' => 'T-series',
+            'kuldetes_id' => 2
         ]);
 
         Urhajo::create([
-            'nev' => 'Rakéta'
+            'nev' => 'Rakéta',
+            'kuldetes_id' => 1
         ]);
 
         Urhajo::create([
-            'nev' => 'Fejszés'
+            'nev' => 'Fejszés',
+            'kuldetes_id' => 3
         ]);
     }
 

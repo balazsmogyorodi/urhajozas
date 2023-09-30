@@ -23,41 +23,42 @@ return new class extends Migration
         });
 
         Urhajos::create([
-            'azonosito' => 1,
             'nev' => 'Nevem Álmos',
-            'szuletes' => '2002.06.02'
+            'szuletes' => '2002.06.02',
+            'urhajoId' => '1'
         ]);
         Urhajos::create([
-            'azonosito' => 2,
             'nev' => 'Nevem Előd',
-            'szuletes' => '2002.06.02'
+            'szuletes' => '2002.06.02',
+            'urhajoId' => '1'
         ]);
         Urhajos::create([
-            'azonosito' => 3,
             'nev' => 'Nevem Huba',
-            'szuletes' => '2002.06.02'
+            'szuletes' => '2002.06.02',
+            'urhajoId' => '2'
         ]);
 
         Urhajos::create([
-            'azonosito' => 4,
             'nev' => 'Nevem Kun',
-            'szuletes' => '2002.06.02'
+            'szuletes' => '2002.06.02',
+            'urhajoId' => '3'
         ]);
         Urhajos::create([
-            'azonosito' => 5,
             'nev' => 'Nevem Ond',
-            'szuletes' => '2002.06.02'
+            'szuletes' => '2002.06.02',
+            'urhajoId' => '3'
         ]);
         Urhajos::create([
-            'azonosito' => 6,
             'nev' => 'Nevem Tas',
-            'szuletes' => '2002.06.02'
+            'szuletes' => '2002.06.02',
+            'urhajoId' => '3'
         ]);
 
         Urhajos::create([
             'azonosito' => 6,
             'nev' => 'Nevem Töhötöm',
-            'szuletes' => '2002.06.02'
+            'szuletes' => '2002.06.02',
+            'urhajoId' => '3'
         ]);
     }
 

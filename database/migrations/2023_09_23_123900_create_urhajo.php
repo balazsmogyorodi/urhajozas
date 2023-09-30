@@ -17,7 +17,7 @@ return new class extends Migration
         Schema::create('urhajo', function (Blueprint $table) {
             $table->id();
             $table->string("nev");
-            $table->foreignId('kuldetes_id')->references('kod_nev')->on('Kuldetes');
+            $table->foreignId('kuldetes_id')->references('kod_id')->on('Kuldetes');
             $table->timestamps();
         });
 
@@ -39,8 +39,13 @@ return new class extends Migration
         Urhajo::create([
             'nev' => 'Fejszés',
             'kuldetes_id' => 3
-        ]);
+        ]); 
+
+
     }
+
+
+
 
     /**
      * Reverse the migrations.
